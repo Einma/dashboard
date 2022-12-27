@@ -265,13 +265,20 @@ body {
   .main-content-left {
     grid-template-columns: 1fr;
   }
+
   .main-nav {
     grid-template-columns: 1fr;
     grid-area: 1 / 1 / 17 / 3;
   }
-  .main-nav > ul {
-    align-content: center;
+  .main-nav > ul > li {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
+
+  .main-nav > ul > li > span {
+    justify-self: center;
+  }
+
   strong {
     display: none;
   }
