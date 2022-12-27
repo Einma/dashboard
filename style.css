@@ -240,8 +240,40 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+  .main-header {
+    grid-area: 1 / 3 / 4 / 17;
+  }
+
+  .main-header-top-right {
+    display: none;
+  }
+
+  .main-header-top-search-input {
+    grid-area: 1 / 3 / 2 / 14;
+  }
+
+  .main-header-bot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header-bot > * {
+    padding: 0;
+    width: 100%;
+  }
+
   .main-content-left {
     grid-template-columns: 1fr;
+  }
+  .main-nav {
+    grid-template-columns: 1fr;
+    grid-area: 1 / 1 / 17 / 3;
+  }
+  .main-nav > ul {
+    align-content: center;
+  }
+  strong {
+    display: none;
   }
 }
 
